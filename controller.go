@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	api "github.com/BGrewell/go-iperf/api/go"
+	api "github.com/JosiahWhite/go-iperf/api/go"
 	"google.golang.org/grpc"
 )
 

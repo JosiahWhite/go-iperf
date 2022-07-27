@@ -6,7 +6,7 @@ import (
 //"github.com/BGrewell/go-iperf"
 //"time"
 	"fmt"
-	"github.com/BGrewell/go-iperf"
+	"github.com/JosiahWhite/go-iperf"
 	"time"
 )
 
