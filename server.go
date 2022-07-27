@@ -59,7 +59,7 @@ func (s *Server) LoadOptions(options *ServerOptions) {
 
 func (s *Server) commandString() (cmd string, err error) {
 	builder := strings.Builder{}
-	fmt.Fprintf(&builder, "%s -s", binaryLocation)
+	builder.WriteString("iperf3 -s")
 
 	if s.Options.OneOff != nil && s.OneOff() == true {
 		builder.WriteString(" --one-off")

@@ -92,7 +92,7 @@ func (c *Client) commandString() (cmd string, err error) {
 	if c.Options.Host == nil || *c.Options.Host == "" {
 		return "", errors.New("unable to execute client. The field 'host' is required")
 	}
-	fmt.Fprintf(&builder, "%s -c %s", binaryLocation, c.Host())
+	fmt.Fprintf(&builder, "iperf3 -c %s", c.Host())
 
 	if c.Options.Port != nil {
 		fmt.Fprintf(&builder, " -p %d", c.Port())
